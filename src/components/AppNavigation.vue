@@ -3,7 +3,7 @@
       <nav class="navbar navbar-expand-lg navbar-light">
   <div class="turndigital-container">
     <router-link :to="{ name: 'home'}">
-      <img class="navbar-brand" src="/logo.webp" alt="">
+      <img class="navbar-brand" src="/logo.webp" alt="logo">
     </router-link>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -41,7 +41,7 @@
         <div class="theme-toggle">
           <input type="checkbox" id="theme-switch" @change="toggleTheme" />
           <label for="theme-switch" class="toggle-label bg-lightgray">
-            <span class="toggle-inner"><img src="/sunny.webp" alt=""></span>
+            <span class="toggle-inner"><img src="/sunny.webp" alt="sunny"></span>
             <span class="toggle-switch"></span>
           </label>
         </div>

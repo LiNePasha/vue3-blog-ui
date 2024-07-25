@@ -7,12 +7,12 @@
             <div class="category">{{ post.category }}</div>
             <div class="summary">{{ post.summary }}</div>
             <div class="admin d-flex align-items-center">
-              <img src="/admin.webp" alt="" />
+              <img src="/admin.webp" alt="admin" />
               <span class="name">Jason Francisco</span>
               <span class="date">August 20, 2022</span>
             </div>
             <div class="post-image w-100">
-              <img :src="post.image" class="w-100" alt="" />
+              <img :src="post.image" class="w-100" alt="post image" />
             </div>
             <div class="topic">
               <p>

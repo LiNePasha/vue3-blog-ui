@@ -4,14 +4,14 @@
     <div class="post-list">
       <div v-for="post in posts" :key="post.id" class="post">
         <router-link :to="{ name: 'post', params: { id: post.id }}" class="router-link">
-          <img :src="post.image" alt="" class="post-image" />
+          <img :src="post.image" alt="post image" class="post-image" />
         <div class="post-content">
           <div class="category">{{ post.category }}</div>
           <div class="summary">
             {{ post.summary }}
           </div>
           <div class="admin d-flex align-items-center">
-              <img src="/admin.webp" alt="">
+              <img src="/admin.webp" alt="admin-image">
               <span class="name">Jason Francisco</span>
               <span class="date">August 20, 2022</span>
           </div>

@@ -9,7 +9,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav m-auto mb-2">
         <li class="nav-item">
           <a class="" href="#">Home</a>
         </li>
@@ -28,7 +28,7 @@
       </ul>
       <form class="d-flex align-items-center gap-4">
         <!-- <input class="form-control bg-lightgray border-0" type="search" placeholder="Search" aria-label="Search"> -->
-        <div class="bg-light p-2 rounded d-none d-sm-flex align-items-center gap-2">
+        <div class="bg-light p-input rounded d-none d-sm-flex align-items-center gap-2">
   <input type="text" class="border-0 bg-light" placeholder="Search">
   <div>
     <svg class="cursor-pointer" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -127,6 +127,21 @@ input[type="checkbox"]:checked + .toggle-label .toggle-inner {
 
 input[type="checkbox"]:checked + .toggle-label {
   background-color: #66bb6a;
+}
+
+input[type="text"]{
+  max-width: 8.2rem;
+}
+
+input[type="text"],
+input[type="text"]:focus {
+  border: 0;
+  outline: none;
+  box-shadow: none;
+}
+
+.p-input{
+  padding: 0.5rem 0.5rem 0.5rem 0.8rem !important;
 }
 
 </style>

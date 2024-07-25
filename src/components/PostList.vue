@@ -162,6 +162,13 @@ export default {
   margin-right: 1.125rem;
 }
 
+@media (max-width: 992px) {
+.post-content .admin .name,
+.post-content .admin .date {
+  font-size: 0.8rem;
+}
+}
+
 .post-content .admin .date {
   font-weight: 400;
 }

@@ -84,8 +84,8 @@ export default {
 
 @media (max-width: 992px) {
   .summary {
-    font-size: 1.625rem; /* 26px converted to rem */
-    line-height: 1.875rem; /* 30px converted to rem */
+    font-size: 1.25rem;
+    line-height: 1.5rem;
   }
 }
 
@@ -105,6 +105,13 @@ export default {
 .name {
   font-weight: 600;
   margin-right: 1.125rem; /* 18px converted to rem */
+}
+
+@media (max-width: 992px) {
+  .name,
+.date {
+  font-size: 0.8rem; /* 16px converted to rem */
+}
 }
 
 .date {

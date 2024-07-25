@@ -159,7 +159,7 @@ export default {
 
 @media (max-width: 992px) {
   .post-content .summary {
-    font-size: 1.625rem;
+    font-size: 1.25rem;
     line-height: 1.875rem;
   }
 }

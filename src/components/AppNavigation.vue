@@ -100,7 +100,7 @@ input[type="checkbox"] {
   cursor: pointer;
   width: 3rem;
   height: 1.8rem;
-  border-radius: 100px;
+  border-radius: 6.25rem;
   position: relative;
   transition: background-color 0.2s;
 }
@@ -109,8 +109,8 @@ input[type="checkbox"] {
   position: absolute;
   top: 3px;
   left: 3px;
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;

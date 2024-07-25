@@ -16,16 +16,16 @@
   }
   </script>
 
-  <style scoped>
-  img.ads{
-    width: auto;
-    margin: 50px 0;
-  }
-  @media (max-width: 992px) {
-    img.ads{
+<style scoped>
+img.ads {
+  width: auto;
+  margin: 3.125rem 0; /* 50px converted to rem */
+}
+@media (max-width: 992px) {
+  img.ads {
     width: 100%;
-    margin: 20px 0;
+    margin: 1.25rem 0; /* 20px converted to rem */
   }
-  }
+}
 </style>
   

@@ -115,13 +115,13 @@
     name: 'AppFooter'
   }
   </script>
-  <style scoped>
-h6{
+<style scoped>
+h6 {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 1.125rem; /* 18px converted to rem */
   color: #181A2A;
 }
-a.text-reset,a.text-dark {
+a.text-reset, a.text-dark {
   text-decoration: none;
   color: #3B3C4A;
 }
@@ -132,18 +132,19 @@ a.text-reset,a.text-dark {
 }
 .newsletter p:first-of-type {
   font-weight: 600;
-  font-size: 20px;
+  font-size: 1.25rem; /* 20px converted to rem */
   color: #181A2A;
-  margin-bottom: 5px;
+  margin-bottom: 0.3125rem; /* 5px converted to rem */
 }
-.email-icon{
-  right: 16px; color: #6c757d;
+.email-icon {
+  right: 1rem; /* 16px converted to rem */
+  color: #6c757d;
 }
 .newsletter input {
-  padding: 10px;
+  padding: 0.625rem; /* 10px converted to rem */
 }
 .ml-8 {
-  margin-left: 8px;
+  margin-left: 0.5rem; /* 8px converted to rem */
 }
 strong {
   color: #141624;

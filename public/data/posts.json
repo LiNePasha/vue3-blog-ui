@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "category": "First Post",
+    "summary": "The Impact of Technology on the Workplace: How Technology is Changing",
+    "image": "https://res.cloudinary.com/dzxbbqq4l/image/upload/v1721871542/585632b9d05dcfd0daffacedd55842f5_plgrsg.webp"
+  },
+  {
+    "id": 2,
+    "category": "Second Post",
+    "summary": "This is the summary of the second post.",
+    "image": "https://res.cloudinary.com/dzxbbqq4l/image/upload/v1721871542/585632b9d05dcfd0daffacedd55842f5_plgrsg.webp"
+  },
+  {
+    "id": 3,
+    "category": "Third Post",
+    "summary": "This is the summary of the third post.",
+    "image": "https://res.cloudinary.com/dzxbbqq4l/image/upload/v1721871542/585632b9d05dcfd0daffacedd55842f5_plgrsg.webp"
+  },
+  {
+    "id": 4,
+    "category": "Fourth Post",
+    "summary": "This is the summary of the fourth post.",
+    "image": "https://res.cloudinary.com/dzxbbqq4l/image/upload/v1721871542/585632b9d05dcfd0daffacedd55842f5_plgrsg.webp"
+  },
+  {
+    "id": 5,
+    "category": "Fifth Post",
+    "summary": "This is the summary of the fifth post.",
+    "image": "https://res.cloudinary.com/dzxbbqq4l/image/upload/v1721871542/585632b9d05dcfd0daffacedd55842f5_plgrsg.webp"
+  },
+  {
+    "id": 6,
+    "category": "Sixth Post",
+    "summary": "This is the summary of the sixth post.",
+    "image": "https://res.cloudinary.com/dzxbbqq4l/image/upload/v1721871542/585632b9d05dcfd0daffacedd55842f5_plgrsg.webp"
+  },
+  {
+    "id": 7,
+    "category": "Seventh Post",
+    "summary": "This is the summary of the seventh post.",
+    "image": "https://res.cloudinary.com/dzxbbqq4l/image/upload/v1721871542/585632b9d05dcfd0daffacedd55842f5_plgrsg.webp"
+  },
+  {
+    "id": 8,
+    "category": "Eighth Post",
+    "summary": "This is the summary of the eighth post.",
+    "image": "https://res.cloudinary.com/dzxbbqq4l/image/upload/v1721871542/585632b9d05dcfd0daffacedd55842f5_plgrsg.webp"
+  },
+  {
+    "id": 9,
+    "category": "Ninth Post",
+    "summary": "This is the summary of the ninth post.",
+    "image": "https://res.cloudinary.com/dzxbbqq4l/image/upload/v1721871542/585632b9d05dcfd0daffacedd55842f5_plgrsg.webp"
+  },
+  {
+    "id": 10,
+    "category": "Tenth Post",
+    "summary": "This is the summary of the tenth post.",
+    "image": "https://res.cloudinary.com/dzxbbqq4l/image/upload/v1721871542/585632b9d05dcfd0daffacedd55842f5_plgrsg.webp"
+  }
+]

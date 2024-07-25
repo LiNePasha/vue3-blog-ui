@@ -1,0 +1,60 @@
+/* 
+    TurnDigital Blog V1
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --lightGray: #F4F4F5;
+    --mainBlue: #4B6BFB;
+}
+
+body{
+    font-family: "Work Sans", sans-serif;
+}
+
+.bg-lightgray {
+    background-color: var(--lightGray);
+}
+
+.turndigital-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 22rem;
+    padding-left: 22rem;
+  }
+  
+  @media (max-width: 1600px) {
+    .turndigital-container {
+      padding-right: 10rem;
+      padding-left: 10rem;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .turndigital-container {
+      padding-right: 6rem;
+      padding-left: 6rem;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .turndigital-container {
+      padding-right: 2rem;
+      padding-left: 2rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .turndigital-container {
+      padding-right: 1rem;
+      padding-left: 1rem;
+    }
+  }
+
+  .footer-bg{
+    background-color: #F6F6F7;
+  }

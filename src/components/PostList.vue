@@ -27,48 +27,44 @@
   </div>
 </template>
 
-<script>
+<script setup>
+import { ref, onMounted } from 'vue';
 import axios from 'axios';
 
-export default {
-  data() {
-    return {
-      posts: [],
-      page: 1,
-      perPage: 6,
-      totalPosts: 0,
-      hasMorePosts: true,
-      loading: false, // Loading state
-    };
-  },
-  created() {
-    this.fetchPosts();
-  },
-  methods: {
-    fetchPosts() {
-      this.loading = true; // Set loading to true before the request
-      axios.get('/data/posts.json')
-        .then(response => {
-          const allPosts = response.data;
-          this.totalPosts = allPosts.length;
-          const startIndex = (this.page - 1) * this.perPage;
-          const endIndex = this.page * this.perPage;
-          const newPosts = allPosts.slice(startIndex, endIndex);
-          this.posts = this.posts.concat(newPosts);
-          if (this.posts.length >= this.totalPosts) {
-            this.hasMorePosts = false;
-          }
-        })
-        .finally(() => {
-          this.loading = false; // Set loading to false after the request
-        });
-    },
-    loadMore() {
-      this.page++;
-      this.fetchPosts();
-    }
-  }
-}
+const posts = ref([]);
+const page = ref(1);
+const perPage = ref(6);
+const totalPosts = ref(0);
+const hasMorePosts = ref(true);
+const loading = ref(false);
+
+const fetchPosts = () => {
+  loading.value = true;
+  axios.get('/data/posts.json')
+    .then(response => {
+      const allPosts = response.data;
+      totalPosts.value = allPosts.length;
+      const startIndex = (page.value - 1) * perPage.value;
+      const endIndex = page.value * perPage.value;
+      const newPosts = allPosts.slice(startIndex, endIndex);
+      posts.value = posts.value.concat(newPosts);
+      if (posts.value.length >= totalPosts.value) {
+        hasMorePosts.value = false;
+      }
+    })
+    .finally(() => {
+      loading.value = false;
+    });
+};
+
+const loadMore = () => {
+  page.value++;
+  fetchPosts();
+};
+
+onMounted(() => {
+  fetchPosts();
+});
 </script>
 
 <style scoped>
@@ -80,7 +76,7 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Full height to cover the entire view */
+  height: 100vh;
 }
 
 .spinner {
@@ -160,13 +156,6 @@ export default {
 .post-content .admin .name {
   font-weight: 600;
   margin-right: 1.125rem;
-}
-
-@media (max-width: 992px) {
-.post-content .admin .name,
-.post-content .admin .date {
-  font-size: 0.8rem;
-}
 }
 
 .post-content .admin .date {

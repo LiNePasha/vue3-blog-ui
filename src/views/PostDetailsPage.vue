@@ -115,26 +115,21 @@
   </div>
 </template>
 
-<script>
-import axios from "axios";
-import AppAds from "@/components/AppAds.vue";
+<script setup>
+import { ref, onMounted } from 'vue';
+import { useRoute } from 'vue-router';
+import axios from 'axios';
+import AppAds from '@/components/AppAds.vue';
 
-export default {
-  data() {
-    return {
-      post: {},
-    };
-  },
-  components: {
-    AppAds,
-  },
-  created() {
-    const postId = parseInt(this.$route.params.id);
-    axios.get("/data/posts.json").then((response) => {
-      this.post = response.data.find((post) => post.id === postId);
-    });
-  },
-};
+const route = useRoute();
+const post = ref({});
+
+onMounted(() => {
+  const postId = parseInt(route.params.id);
+  axios.get('/data/posts.json').then((response) => {
+    post.value = response.data.find((p) => p.id === postId);
+  });
+});
 </script>
 
 <style scoped>
